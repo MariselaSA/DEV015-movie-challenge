@@ -1,0 +1,99 @@
+header{
+    font-family: "Concert One",sans-serif;
+    font-weight: 100px; 
+    font-style: normal;
+    font-size: 100px; /*tamaño*/
+    text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);/*borde en sombra*/
+    -webkit-text-stroke: 3px #ffffff; /*línea en blanco contorno*/
+
+}
+body{     
+    background: 
+    linear-gradient(rgba(68, 83, 164, 0.466),rgba(43, 41, 102, 0.515)),
+    url('https://e0.pxfuel.com/wallpapers/560/14/desktop-wallpaper-movie-collage-80s-movie-collage.jpg');   
+
+}
+label{
+    font-family: "Concert One", sans-serif;
+    font-size: 30px;
+    font-weight: 50px;
+}
+
+form{
+    justify-content: center;
+    display: flex;
+}
+select{
+    min-width: min(100%,200px);/*100% indica que ocupará el total del espacio */
+    border-radius: 4px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+
+
+}
+option{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium; 
+}
+ul{
+    display: flex;
+    flex-wrap:wrap ; /*Hace que se emvuelva en filas*/
+    justify-content: space-evenly;/*los elementos se distribuyen de modo que el espacio entre dos elementos (y el espacio a los bordes) sea igual.*/
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+.li{
+    background-color: #070F23; /* Color de fondo del rectángulo */
+    padding: 5px 5px; /* Espaciado interno del rectángulo */
+    width: 210px; /*Ancho del Rectangulo*/
+    border: 5px solid #070F23; /* Borde del rectángulo */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto dentro del rectángulo */
+    font-family: "Concert One" ,sans-serif;
+    list-style-type: none; /* Elimina las viñetas */
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;/* transform: Es una propiedad que permite cambiar la forma, la función de
+                                                             animación ease-in-out se utiliza para hacer que el cambio sea gradual.
+                                                             box-shadow: Es una propiedad que añade sombras alrededor del elemento */
+}
+
+.li:hover {
+        transform: scale(1.10); /* Aumentar ligeramente el tamaño */
+        box-shadow: 0 10px 15px rgba(170, 59, 59, 0.5); /* Agregar sombra al hacer hover */
+        /*0 10px 15px: Estos valores definen la sombra:
+        0: No hay desplazamiento horizontal de la sombra (no se mueve a la izquierda ni a la derecha).
+       10px: La sombra se desplaza 10 píxeles hacia abajo.
+       15px: Es el desenfoque de la sombra (cuanto mayor sea el valor, más difusa será la sombra).*/
+
+}
+
+li img {
+    width: 185px;
+    height: auto;
+    border-radius: 10px;        
+      } 
+
+.title{
+    text-transform: uppercase;
+} 
+
+
+#reset-button{
+    background-color: rgb(11, 11, 39);
+    font-family: "Concert One", sans-serif;
+    border-radius: 8px;
+    color:white;
+    padding: 8px;
+    font-size: medium;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: "Concert One",sans-serif;
+    font-size: small;
+    color: white;
+}

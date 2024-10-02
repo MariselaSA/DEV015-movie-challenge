@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIBLIOTECA MOVIE</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>BIBIOTECA MOVIE</header>
-    <main>
+    <header>BIBLIOTECA MOVIE</header>  
+     <main>
+        
         <form>
-            <label for="genero">SELECCIONA POR GÉNERO</label>
+            <label for="genero">SELECCIONA POR GÉNERO: </label>
             <select name="genero" id="genero">
+                <option value="" disabled selected>--SELECCIONA UNA OPCION--</option>
                 <option value="Acción">ACCION</option>
                 <option value="Comedia">COMEDIA</option>
                 <option value="Aventura">AVENTURA</option>
@@ -25,8 +30,9 @@
                 <option value="Ciencia ficción">CIENCIA FICCIÓN</option>
                 <option value="Fantasía">FANTASÍA</option>
             </select>
-            <label for="pupularidad">SELECCIONAR POR POPULARIDAD</label>
+            <label for="pupularidad">SELECCIONAR POR POPULARIDAD: </label>
             <select name="ordenar" id="ordenar">
+                <option value="" disabled selected>--SELECCIONA UNA OPCION--</option>               
                 <option value="mas">MÁS VISTAS</option>
                 <option value="menos">MENOS VISTAS</option>
             </select>
@@ -40,7 +46,7 @@
         </div>
 
     </main>
-    <footer>©By Marisela</footer>
+    <footer>©BY MARISELA</footer>
 
 
 
