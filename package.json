@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "description": "- [1. Preámbulo](#1-preambulo)\r - [2. Resumen del proyecto](#2-resumen-del-proyecto)\r - [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)\r - [4. Consideraciones generales](#4-consideraciones-generales)\r - [5. Consideraciones técnicas](#5-consideraciones-técnicas)\r - [6. Criterios mínimos de aceptación del proyecto](#6-criterios-mínimos-de-aceptación-del-proyecto)\r - [7. Deploy](#7-deploy)\r - [8. Consideraciones para pedir tu project feedback](#8-consideraciones-para-pedir-tu-project-feedback)\r - [9. Consejos, guías y lecturas complementarias](#9-consejos-guías-y-lecturas-complementarias)",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose --coverage test/",
     "start": "serve src/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "serve": "^14.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
